@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
 
 export default function Home() {
+
   return (
     <main className="bg-[#0f0f0f] text-white overflow-hidden">
 
@@ -17,7 +18,7 @@ export default function Home() {
       {/* HERO SECTION */}
       <section
         id="home"
-        className="relative min-h-screen flex items-center overflow-hidden"
+        className="relative min-h-screen flex items-center overflow-hidden px-5 sm:px-6 md:px-10"
       >
 
         {/* Background Image */}
@@ -31,18 +32,18 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/75" />
 
         {/* Main Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 w-full py-28 md:py-0">
+        <div className="relative z-10 max-w-7xl mx-auto w-full py-28 md:py-0">
 
           <div className="grid lg:grid-cols-2 gap-10 md:gap-20 items-center">
 
             {/* LEFT CONTENT */}
             <div>
 
-              <p className="uppercase tracking-[0.35em] text-[#d6b37d] text-xs md:text-sm mb-4 md:mb-6">
+              <p className="uppercase tracking-[0.22em] md:tracking-[0.35em] text-[#d6b37d] text-xs md:text-sm mb-4 md:mb-6 leading-relaxed">
                 Premium Interior Design Studio
               </p>
 
-              <h1 className="text-4xl sm:text-5xl md:text-8xl leading-none font-bold mb-8 md:mb-12">
+              <h1 className="text-5xl sm:text-6xl md:text-8xl leading-[0.95] font-bold mb-8 md:mb-12">
                 Redefine <br />
                 Your Living Space
               </h1>
@@ -76,7 +77,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
 
               {/* Card 1 */}
-              <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-[24px] md:rounded-[30px] p-6 md:p-10 hover:border-[#d6b37d] transition duration-300">
+              <div className="bg-white/10 backdrop-blur-md md:backdrop-blur-xl border border-white/10 rounded-[24px] md:rounded-[30px] p-6 md:p-10 hover:border-[#d6b37d] transition duration-300">
 
                 <h2 className="text-3xl md:text-5xl font-bold text-[#d6b37d] mb-3 md:mb-4">
                   100+
@@ -93,7 +94,7 @@ export default function Home() {
               </div>
 
               {/* Card 2 */}
-              <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-[24px] md:rounded-[30px] p-6 md:p-10 hover:border-[#d6b37d] transition duration-300">
+              <div className="bg-white/10 backdrop-blur-md md:backdrop-blur-xl border border-white/10 rounded-[24px] md:rounded-[30px] p-6 md:p-10 hover:border-[#d6b37d] transition duration-300">
 
                 <h2 className="text-3xl md:text-5xl font-bold text-[#d6b37d] mb-3 md:mb-4">
                   15K+
@@ -110,7 +111,7 @@ export default function Home() {
               </div>
 
               {/* Card 3 */}
-              <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-[24px] md:rounded-[30px] p-6 md:p-10 hover:border-[#d6b37d] transition duration-300">
+              <div className="bg-white/10 backdrop-blur-md md:backdrop-blur-xl border border-white/10 rounded-[24px] md:rounded-[30px] p-6 md:p-10 hover:border-[#d6b37d] transition duration-300">
 
                 <h2 className="text-3xl md:text-5xl font-bold text-[#d6b37d] mb-3 md:mb-4">
                   10M+
@@ -127,7 +128,7 @@ export default function Home() {
               </div>
 
               {/* Card 4 */}
-              <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-[24px] md:rounded-[30px] p-6 md:p-10 hover:border-[#d6b37d] transition duration-300">
+              <div className="bg-white/10 backdrop-blur-md md:backdrop-blur-xl border border-white/10 rounded-[24px] md:rounded-[30px] p-6 md:p-10 hover:border-[#d6b37d] transition duration-300">
 
                 <h2 className="text-3xl md:text-5xl font-bold text-[#d6b37d] mb-3 md:mb-4">
                   5M+

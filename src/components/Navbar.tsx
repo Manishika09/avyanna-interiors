@@ -7,14 +7,14 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-black/30 border-b border-white/10">
+    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md md:backdrop-blur-xl bg-black/40 border-b border-white/10">
 
-      <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 md:py-5 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-5 flex items-center justify-between">
 
         {/* Logo */}
         <a
           href="#home"
-          className="text-2xl md:text-4xl font-bold text-[#d6b37d]"
+          className="text-[2rem] md:text-4xl font-bold text-[#d6b37d] leading-none"
         >
           Avyanna Interiors
         </a>
@@ -70,9 +70,9 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-white text-4xl"
+          className="md:hidden text-white text-3xl leading-none"
         >
-          ☰
+          {menuOpen ? "×" : "☰"}
         </button>
 
       </div>
@@ -80,7 +80,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {menuOpen && (
 
-        <div className="md:hidden bg-black border-t border-white/10 px-6 py-8 flex flex-col gap-6 text-lg uppercase tracking-[0.2em]">
+        <div className="md:hidden bg-black/95 backdrop-blur-xl border-t border-white/10 px-6 py-8 flex flex-col gap-6 text-base uppercase tracking-[0.2em]">
 
           <a
             href="#home"
@@ -126,7 +126,7 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={() => setMenuOpen(false)}
-            className="bg-[#d6b37d] text-black px-6 py-4 rounded-md font-semibold text-center hover:bg-[#e2c28f] transition duration-300"
+            className="bg-[#d6b37d] text-black px-6 py-4 rounded-md font-semibold text-center hover:bg-[#e2c28f] transition duration-300 mt-2"
           >
             Book Consultation
           </a>
