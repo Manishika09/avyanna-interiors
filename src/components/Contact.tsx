@@ -1,163 +1,121 @@
 "use client";
 
-import { useState } from "react";
-
 export default function Contact() {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-
-    const subject = encodeURIComponent(
-      "New Enquiry from Avyanna Interiors Website"
-    );
-
-    const body = encodeURIComponent(`
-Name: ${name}
-
-Phone: ${phone}
-
-Email: ${email}
-
-Project Details:
-${message}
-    `);
-
-    window.location.href = `mailto:avyanna.interiors07@gmail.com?subject=${subject}&body=${body}`;
-  };
-
   return (
     <section
       id="contact"
-      className="py-32 px-6 bg-black text-white"
+      className="py-16 md:py-32 px-4 md:px-6 bg-black text-white"
     >
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20">
+      <div className="max-w-7xl mx-auto">
 
-        {/* Left Content */}
-        <div>
+        {/* Heading */}
+        <div className="mb-14 md:mb-20">
 
-          <p className="uppercase tracking-[0.35em] text-[#d6b37d] text-sm mb-6">
+          <p className="uppercase tracking-[0.35em] text-[#d6b37d] text-xs md:text-sm mb-4 md:mb-6">
             Contact Us
           </p>
 
-          <h2 className="text-5xl md:text-7xl font-bold leading-tight mb-8">
-            Let’s Design Your Dream Space
+          <h2 className="text-4xl md:text-7xl font-bold leading-tight mb-6">
+            Let’s Build Your <br /> Dream Space
           </h2>
 
-          <p className="text-white/70 text-xl leading-relaxed mb-12">
-            Whether you’re planning a luxury home, modern office,
-            or premium renovation project — Avyanna Interiors is
-            here to transform your vision into reality.
+          <p className="text-white/70 text-base md:text-xl max-w-3xl leading-relaxed">
+            Whether you’re planning a luxury home, modern office, or premium
+            renovation project — Avyanna Interiors is here to transform your
+            vision into reality.
           </p>
 
-          <div className="space-y-8">
+        </div>
 
+        {/* Contact Info + Form */}
+        <div className="grid lg:grid-cols-2 gap-12 md:gap-20">
+
+          {/* LEFT SIDE */}
+          <div className="space-y-10">
+
+            {/* Phone */}
             <div>
-              <p className="uppercase tracking-[0.3em] text-[#d6b37d] text-sm mb-3">
+
+              <p className="uppercase tracking-[0.3em] text-[#d6b37d] text-xs md:text-sm mb-3">
                 Phone
               </p>
 
-              <a
-                href="tel:+917694843520"
-                className="text-5xl font-bold hover:text-[#d6b37d] transition"
-              >
+              <h3 className="text-2xl md:text-5xl font-bold leading-tight">
                 +91 7694843520
-              </a>
+              </h3>
+
             </div>
 
+            {/* Email */}
             <div>
-              <p className="uppercase tracking-[0.3em] text-[#d6b37d] text-sm mb-3">
+
+              <p className="uppercase tracking-[0.3em] text-[#d6b37d] text-xs md:text-sm mb-3">
                 Email
               </p>
 
-              <a
-                href="mailto:avyanna.interiors07@gmail.com"
-                className="text-4xl font-bold hover:text-[#d6b37d] transition break-all"
-              >
+              <h3 className="text-2xl md:text-5xl font-bold leading-tight break-all">
                 avyanna.interiors07@gmail.com
-              </a>
+              </h3>
+
             </div>
 
+            {/* Location */}
             <div>
-              <p className="uppercase tracking-[0.3em] text-[#d6b37d] text-sm mb-3">
+
+              <p className="uppercase tracking-[0.3em] text-[#d6b37d] text-xs md:text-sm mb-3">
                 Location
               </p>
 
-              <p className="text-4xl font-bold">
+              <h3 className="text-2xl md:text-5xl font-bold leading-tight">
                 Indore, Madhya Pradesh
-              </p>
+              </h3>
+
             </div>
 
           </div>
 
-        </div>
+          {/* RIGHT SIDE FORM */}
+          <div className="bg-[#111111] border border-white/10 rounded-[25px] md:rounded-[40px] p-6 md:p-10">
 
-        {/* Contact Form */}
-        <div>
+            <form className="space-y-6">
 
-          <form
-            onSubmit={handleSubmit}
-            className="bg-[#111111] border border-white/10 rounded-[40px] p-10 space-y-6"
-          >
+              {/* Name */}
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="w-full bg-black border border-white/10 rounded-xl px-5 py-4 text-white placeholder:text-white/40 outline-none focus:border-[#d6b37d] transition duration-300"
+              />
 
-            <input
-              type="text"
-              placeholder="Your Name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-              className="w-full bg-black border border-white/10 rounded-2xl px-6 py-5 text-white outline-none focus:border-[#d6b37d]"
-            />
+              {/* Phone */}
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                className="w-full bg-black border border-white/10 rounded-xl px-5 py-4 text-white placeholder:text-white/40 outline-none focus:border-[#d6b37d] transition duration-300"
+              />
 
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              value={phone}
-              onChange={(e) => setPhone(e.target.value)}
-              required
-              className="w-full bg-black border border-white/10 rounded-2xl px-6 py-5 text-white outline-none focus:border-[#d6b37d]"
-            />
+              {/* Email */}
+              <input
+                type="email"
+                placeholder="Email Address"
+                className="w-full bg-black border border-white/10 rounded-xl px-5 py-4 text-white placeholder:text-white/40 outline-none focus:border-[#d6b37d] transition duration-300"
+              />
 
-            <input
-              type="email"
-              placeholder="Email Address"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              className="w-full bg-black border border-white/10 rounded-2xl px-6 py-5 text-white outline-none focus:border-[#d6b37d]"
-            />
+              {/* Project */}
+              <textarea
+                rows={6}
+                placeholder="Tell us about your project..."
+                className="w-full bg-black border border-white/10 rounded-xl px-5 py-4 text-white placeholder:text-white/40 outline-none focus:border-[#d6b37d] transition duration-300 resize-none"
+              />
 
-            <textarea
-              placeholder="Tell us about your project..."
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              required
-              rows={6}
-              className="w-full bg-black border border-white/10 rounded-2xl px-6 py-5 text-white outline-none focus:border-[#d6b37d] resize-none"
-            />
+              {/* Button */}
+              <button
+                type="submit"
+                className="w-full bg-[#d6b37d] text-black py-3 md:py-5 rounded-xl font-semibold text-lg hover:bg-[#e2c28f] transition duration-300"
+              >
+                Send Enquiry
+              </button>
 
-            <button
-              type="submit"
-              className="w-full bg-[#d6b37d] text-black py-5 rounded-2xl text-xl font-bold hover:scale-[1.02] transition duration-300"
-            >
-              Send Enquiry
-            </button>
-
-          </form>
-
-          {/* Map */}
-          <div className="mt-10 rounded-[30px] overflow-hidden border border-white/10">
-
-            <iframe
-              src="https://www.google.com/maps?q=Vijay+Nagar+Indore&output=embed"
-              width="100%"
-              height="350"
-              loading="lazy"
-              className="w-full"
-            ></iframe>
+            </form>
 
           </div>
 
