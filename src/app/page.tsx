@@ -18,7 +18,7 @@ export default function Home() {
       {/* HERO SECTION */}
       <section
         id="home"
-        className="relative min-h-screen flex items-center overflow-hidden px-5 sm:px-6 md:px-10"
+        className="relative min-h-screen flex items-center overflow-hidden px-8 sm:px-10 md:px-10"
       >
 
         {/* Background Image */}
@@ -32,18 +32,18 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/75" />
 
         {/* Main Content */}
-        <div className="relative z-10 max-w-7xl mx-auto w-full py-28 md:py-0">
+        <div className="relative z-10 max-w-7xl mx-auto w-full pt-36 pb-20 md:py-0 px-1">
 
           <div className="grid lg:grid-cols-2 gap-10 md:gap-20 items-center">
 
             {/* LEFT CONTENT */}
             <div>
 
-              <p className="uppercase tracking-[0.22em] md:tracking-[0.35em] text-[#d6b37d] text-xs md:text-sm mb-4 md:mb-6 leading-relaxed">
+              <p className="uppercase tracking-[0.18em] sm:tracking-[0.22em] md:tracking-[0.35em] text-[#d6b37d] text-xs md:text-sm mb-4 md:mb-6 leading-relaxed">
                 Premium Interior Design Studio
               </p>
 
-              <h1 className="text-5xl sm:text-6xl md:text-8xl leading-[0.95] font-bold mb-8 md:mb-12">
+              <h1 className="text-[3rem] sm:text-6xl md:text-8xl leading-[0.95] font-bold mb-8 md:mb-12">
                 Redefine <br />
                 Your Living Space
               </h1>
@@ -77,7 +77,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
 
               {/* Card 1 */}
-              <div className="bg-white/10 backdrop-blur-md md:backdrop-blur-xl border border-white/10 rounded-[24px] md:rounded-[30px] p-6 md:p-10 hover:border-[#d6b37d] transition duration-300">
+              <div className="bg-white/10 backdrop-blur-md md:backdrop-blur-xl border border-white/10 rounded-[24px] md:rounded-[30px] p-5 md:p-10 hover:border-[#d6b37d] transition duration-300">
 
                 <h2 className="text-3xl md:text-5xl font-bold text-[#d6b37d] mb-3 md:mb-4">
                   100+
@@ -94,7 +94,7 @@ export default function Home() {
               </div>
 
               {/* Card 2 */}
-              <div className="bg-white/10 backdrop-blur-md md:backdrop-blur-xl border border-white/10 rounded-[24px] md:rounded-[30px] p-6 md:p-10 hover:border-[#d6b37d] transition duration-300">
+              <div className="bg-white/10 backdrop-blur-md md:backdrop-blur-xl border border-white/10 rounded-[24px] md:rounded-[30px] p-5 md:p-10 hover:border-[#d6b37d] transition duration-300">
 
                 <h2 className="text-3xl md:text-5xl font-bold text-[#d6b37d] mb-3 md:mb-4">
                   15K+
@@ -111,7 +111,7 @@ export default function Home() {
               </div>
 
               {/* Card 3 */}
-              <div className="bg-white/10 backdrop-blur-md md:backdrop-blur-xl border border-white/10 rounded-[24px] md:rounded-[30px] p-6 md:p-10 hover:border-[#d6b37d] transition duration-300">
+              <div className="bg-white/10 backdrop-blur-md md:backdrop-blur-xl border border-white/10 rounded-[24px] md:rounded-[30px] p-5 md:p-10 hover:border-[#d6b37d] transition duration-300">
 
                 <h2 className="text-3xl md:text-5xl font-bold text-[#d6b37d] mb-3 md:mb-4">
                   10M+
@@ -128,7 +128,7 @@ export default function Home() {
               </div>
 
               {/* Card 4 */}
-              <div className="bg-white/10 backdrop-blur-md md:backdrop-blur-xl border border-white/10 rounded-[24px] md:rounded-[30px] p-6 md:p-10 hover:border-[#d6b37d] transition duration-300">
+              <div className="bg-white/10 backdrop-blur-md md:backdrop-blur-xl border border-white/10 rounded-[24px] md:rounded-[30px] p-5 md:p-10 hover:border-[#d6b37d] transition duration-300">
 
                 <h2 className="text-3xl md:text-5xl font-bold text-[#d6b37d] mb-3 md:mb-4">
                   5M+
